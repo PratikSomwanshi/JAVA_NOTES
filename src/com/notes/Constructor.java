@@ -15,6 +15,11 @@ class Hello{
 	int id;
 	String name;
 	
+	Hello(){
+//		this method is used to call the constructor of the same class 
+		this(1, "Rohan");
+	}
+	
 	Hello(int id, String name){
 		this.id = id;
 		this.name = name;
