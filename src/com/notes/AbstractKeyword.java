@@ -12,6 +12,14 @@ abstract class Driverrr{
 //	Abstract method can never be final and static.
 	abstract void getMsg();
 	
+	public int x;
+	
+	// Abstract class can have constructor and the class which going to implement it will going to execute the constructor using super keyword
+	public Driverrr() {
+		// TODO Auto-generated constructor stub
+		this.x = 10;
+	}
+	
 //	abstract keyword not allowed on variable
 //	abstract int a; // invalid
 	
