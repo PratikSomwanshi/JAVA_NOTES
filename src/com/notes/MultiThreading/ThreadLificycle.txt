@@ -1,0 +1,35 @@
+Thread Lifecycle in Java
+
+1. Newborn (New) State
+A new thread is created using the Thread class or Runnable interface.
+The thread is not yet started, and its state is set to "newborn".
+
+2. Runnable (Ready) State
+The start() method is called on the thread, and it becomes eligible to run.
+The thread is waiting for the JVM to schedule it for execution.
+The thread's state is set to "runnable".
+
+3. Running State
+The JVM schedules the thread to run, and it starts executing its task.
+The thread is currently executing its code.
+The thread's state is set to "running".
+
+4. Waiting (Blocked) State
+The thread is waiting for some resource or event to occur.
+The thread is blocked and cannot continue execution until the resource becomes available.
+The thread's state is set to "waiting".
+
+5. Sleeping (Timed Waiting) State
+The thread is forced to sleep for a specified period using sleep() or wait() methods.
+The thread is not consuming CPU resources but is waiting for the sleep period to end.
+The thread's state is set to "sleeping".
+
+6. Dead (Terminated) State
+The thread completes its execution or is terminated abruptly.
+The thread's state is set to "dead".
+The thread cannot be restarted or resumed.
+
+Additional Notes
+A thread can transition from one state to another based on various factors like JVM scheduling, resource availability, or explicit method calls.
+The join() method can be used to wait for a thread to complete its execution.
+The interrupt() method can be used to interrupt a sleeping or waiting thread.
